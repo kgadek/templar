@@ -10,6 +10,12 @@ jobs:
         include:
           - os: ubuntu-latest
             toolchain: stable
+            target: i586-unknown-linux-musl
+            use-cross: false
+            run-tests: true
+            ext: ''
+          - os: ubuntu-latest
+            toolchain: stable
             target: i686-unknown-linux-musl
             use-cross: false
             run-tests: true

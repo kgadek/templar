@@ -10,6 +10,8 @@ jobs:
     strategy:
       matrix:
         include:
+          - target: i586-unknown-linux-musl
+            build-options: []
           - target: i686-unknown-linux-musl
             build-options: []
           - target: x86_64-unknown-linux-gnu
@@ -141,6 +143,7 @@ jobs:
     strategy:
       matrix:
         include:
+          - target: i586-unknown-linux-musl
           - target: i686-unknown-linux-musl
           - target: x86_64-unknown-linux-gnu
           - target: x86_64-unknown-linux-musl
